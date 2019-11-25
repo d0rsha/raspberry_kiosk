@@ -9,7 +9,7 @@ After=network-online.target
 Environment=DISPLAY=$DISPLAY
 Environment=XAUTHORITY=/home/pi/.Xauthority
 Type=simple
-ExecStartPre=/bin/sleep 10
+# ExecStartPre=/bin/sleep 10
 ExecStart=/bin/bash /home/pi/kiosk.sh
 Restart=on-abort
 User=pi
