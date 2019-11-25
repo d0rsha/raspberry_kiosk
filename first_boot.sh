@@ -9,6 +9,5 @@ sudo apt-get install -y sed
 sudo apt-get install -y xdotool
 sudo raspi-config --expand-rootfs
 chromium-browser & 
-echo "Everyday boot ended gracefully, rebooting..."
-reboot
+echo "First boot ended gracefully"
 
