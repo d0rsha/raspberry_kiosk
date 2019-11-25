@@ -6,7 +6,7 @@ Wants=graphical.target
 After=network-online.target
 
 [Service]
-Environment=DISPLAY=:0.0
+Environment=DISPLAY=:0
 Environment=XAUTHORITY=/home/pi/.Xauthority
 Type=simple
 WorkingDirectory=/home/pi
