@@ -22,12 +22,17 @@ sudo echo "splash quiet plymouth.ignore-serial-consoles logo.nologo vt.global_cu
 #my_image = Image.Text(text, 1, 1, 1);
 #message_sprite.SetImage(my_image);
 
-sudo apt-get install -y --no-install-recommends xserver-xorg x11-xserver-utils xinit openbox
-sudo apt-get install -y --no-install-recommends chromium-browser
-sudo apt-get install -y unclutter
+
+
+#
+# OpenBox is replaced by system Daemon
+#
+#sudo apt-get install -y --no-install-recommends xserver-xorg x11-xserver-utils xinit openbox
+#sudo apt-get install -y --no-install-recommends chromium-browser
+#sudo apt-get install -y unclutter
 
 #Replace the open box autostart config file
 #sudo nano /etc/xdg/openbox/autostart
-wget https://raw.githubusercontent.com/d0rsha/raspberry_kiosk/master/autostart --output-document=autostart
-sudo mv autostart -f /etc/xdg/openbox/autostart
-sudo reboot
+#wget https://raw.githubusercontent.com/d0rsha/raspberry_kiosk/master/autostart --output-document=autostart
+#sudo mv autostart -f /etc/xdg/openbox/autostart
+#sudo reboot
