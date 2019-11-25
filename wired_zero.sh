@@ -14,6 +14,8 @@ sudo mv splash.png /usr/share/plymouth/themes/pix
 
 sudo echo "disable_splash=1" >> /boot/config.txt
 sudo echo "splash quiet plymouth.ignore-serial-consoles logo.nologo vt.global_cursor_default=0" >> /boot/cmdline.txt
+# TODO: Write script that replace "console=tty1" with "console=tty3"
+
 
 #sudo nano /usr/share/plymouth/themes/pix/pix.script
 # Edit the plymouth pix.script, remove the following:
