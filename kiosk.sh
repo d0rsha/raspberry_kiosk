@@ -15,6 +15,6 @@ sleep 20s
 /usr/bin/chromium-browser --noerrdialogs --disable-infobars --kiosk --ignore-certificate-errors --disable-restore-session-state https://www.latlmes.com/breaking/your-sensational-news-headline-here-3 & 
 
 while true; do
-	xdotool key ctrl+F5
+	xdotool keydown ctrl+F5; xdotool keyup ctrl+F5;
    	sleep 1d
 done
