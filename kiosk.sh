@@ -1,6 +1,6 @@
 #!/bin/bash
 set -x
-export XAUTHORITY=/home/pi/.Xauthority; export DISPLAY=$DISPLAY; xdotool key Return
+# export XAUTHORITY=/home/pi/.Xauthority; export DISPLAY=$DISPLAY; xdotool key Return
 
 xset s noblank
 xset s off
