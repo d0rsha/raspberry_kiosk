@@ -13,8 +13,6 @@ sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium
 /usr/bin/chromium-browser --noerrdialogs --disable-infobars --kiosk --ignore-certificate-errors --disable-restore-session-state https://www.latlmes.com/breaking/your-sensational-news-headline-here-3 & 
 
 while true; do
-   	WID=$(xdotool search --onlyvisible --class chromium|head -1)
-	xdotool windowactivate ${WID}
-	xdotool key ctrl+F
+	xdotool key ctrl+F5
    	sleep 15
 done
