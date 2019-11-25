@@ -10,7 +10,7 @@ wget https://raw.githubusercontent.com/d0rsha/raspberry_kiosk/master/splash.png 
 sudo mv splash.png /usr/share/plymouth/themes/pix
 
 sudo echo "disable_splash=1" >> /boot/config.txt
-sudo echo "splash quiet plymouth.ignore-serial-consoles logo.nologo vt.global_cursor_default=0" >> /boot/config.txt
+sudo echo "splash quiet plymouth.ignore-serial-consoles logo.nologo vt.global_cursor_default=0" >> /boot/cmdline.txt
 
 #sudo nano /usr/share/plymouth/themes/pix/pix.script
 # Edit the plymouth pix.script, remove the following:
@@ -27,5 +27,4 @@ sudo apt-get install -y unclutter
 #sudo nano /etc/xdg/openbox/autostart
 wget https://raw.githubusercontent.com/d0rsha/raspberry_kiosk/master/autostart --output-document=autostart
 sudo mv autostart -f /etc/xdg/openbox/autostart
-
 sudo reboot
