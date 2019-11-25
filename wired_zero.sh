@@ -1,8 +1,11 @@
 # Install lightdm
+apt list lightdm
 sudo apt-get install -y lightdm
 
 #Install plymouth
+apt list plymouth
 sudo apt-get install -y plymouth plymouth-themes
+apt list pix-plym-splash
 sudo apt-get install -y pix-plym-splash
 
 #Move your custom splash image
