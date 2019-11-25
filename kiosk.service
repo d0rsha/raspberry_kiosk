@@ -1,18 +1,19 @@
 # systemmd file.
 # This file should be located in /lib/systemd/system/kiosk.service
 [Unit]
-Description=Chromium Kiosk
+Description=Chromium Kiosk daemon
 Wants=graphical.target
-After=graphical.target
+After=network-online.target
 
 [Service]
-Environment=DISPLAY=:0
+Environment=DISPLAY=$DISPLAY
 Environment=XAUTHORITY=/home/pi/.Xauthority
 Type=simple
+ExecStartPre=/bin/sleep 10
 ExecStart=/bin/bash /home/pi/kiosk.sh
 Restart=on-abort
 User=pi
 Group=pi
 
 [Install]
-WantedBy=graphical.target
+WantedBy=network-online.target
