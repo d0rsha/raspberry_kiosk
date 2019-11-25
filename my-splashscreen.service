@@ -1,0 +1,10 @@
+[Unit]
+Description=boot splash screen
+DefaultDependencies=no
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/frameparse.py -img /home/pi/splash.png
+Type=oneshot
+
+[Install]
+WantedBy=basic.target
