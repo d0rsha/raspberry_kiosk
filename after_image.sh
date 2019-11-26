@@ -9,6 +9,10 @@ rm -f /lib/systemd/system/kiosk.service
 wget https://raw.githubusercontent.com/d0rsha/raspberry_kiosk/master/kiosk.service --output-document=kiosk.service
 sudo mv -f kiosk.service /lib/systemd/system/kiosk.service
 
+rm -f /home/pi/ping.sh
+wget https://raw.githubusercontent.com/d0rsha/raspberry_kiosk/master/ping.sh --output-document=ping.sh
+sudo mv -f ping.sh /home/pi/ping.sh
+
 sudo systemctl enable kiosk 
 sudo systemctl status kiosk 
 sudo systemctl start kiosk
