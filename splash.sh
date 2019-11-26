@@ -12,8 +12,9 @@ sudo apt-get install -y pix-plym-splash
 
 #Move your custom splash image
 wget https://raw.githubusercontent.com/d0rsha/raspberry_kiosk/master/splash.png --output-document=splash.png
-sudo mv splash.png /usr/share/plymouth/themes/pix
+sudo mv -f splash.png /usr/share/plymouth/themes/pix
 
+sudo sed '/disable_splash=1/d' /usr/share/plymouth/themes/pix/pix.script
 sudo echo "disable_splash=1" >> /boot/config.txt
 sudo echo "# Disable under-voltage warning" >> /boot/config.txt
 sudo echo "avoid_warnings=1" >> /boot/config.txt

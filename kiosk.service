@@ -3,7 +3,7 @@
 [Unit]
 Description=Chromium Kiosk daemon
 Wants=graphical.target
-After=network-online.target
+After=graphical.target
 
 [Service]
 Environment=DISPLAY=:0
@@ -17,4 +17,4 @@ User=pi
 Group=pi
 
 [Install]
-WantedBy=network-online.target
+WantedBy=graphical.target
