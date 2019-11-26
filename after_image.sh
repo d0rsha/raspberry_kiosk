@@ -13,9 +13,12 @@ rm -f /home/pi/ping.sh
 wget https://raw.githubusercontent.com/d0rsha/raspberry_kiosk/master/ping.sh --output-document=ping.sh
 sudo mv -f ping.sh /home/pi/ping.sh
 
+sudo raspi-config --expand-rootfs
 sudo systemctl enable kiosk 
 sudo systemctl status kiosk 
 sudo systemctl start kiosk
-sudo raspi-config --expand-rootfs
 
-echo "Everyday boot ended gracefully"
+
+echo "Everyday boot ended gracefully, rebooting..."
+#remove self from autostart
+#reboot
