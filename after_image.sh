@@ -16,4 +16,6 @@ sudo mv -f ping.sh /home/pi/ping.sh
 sudo systemctl enable kiosk 
 sudo systemctl status kiosk 
 sudo systemctl start kiosk
+sudo raspi-config --expand-rootfs
+
 echo "Everyday boot ended gracefully"
