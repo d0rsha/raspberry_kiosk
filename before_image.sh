@@ -1,4 +1,5 @@
-#Add after_image.sh to autostart 
+#!/bin/bash
+
 sudo echo "./home/pi/after_image.sh" >> /etc/xdg/lxsession/LXDE-pi/autostart
 
 

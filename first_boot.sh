@@ -11,5 +11,6 @@ sudo apt-get install -y sed
 apt list xdotool
 sudo apt-get install -y xdotool
 sudo raspi-config --expand-rootfs
-chromium-browser https://google.com
+chromium-browser https://google.com &
+sleep 5s
 echo "First boot ended gracefully"
