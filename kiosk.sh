@@ -16,5 +16,5 @@ sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium
 
 while true; do
 	xdotool keydown ctrl+F5; xdotool keyup ctrl+F5;
-   	sleep 1d
+   	sleep 2m
 done
