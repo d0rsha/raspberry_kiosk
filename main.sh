@@ -19,7 +19,7 @@ sudo systemctl stop kiosk
 sudo systemctl disable kiosk 
 sudo systemctl enable kiosk 
 sudo systemctl status kiosk 
-sudo systemctl start kiosk
+sudo systemctl start kiosk &
 
 # Setup splash
 sudo mv -f splash.png /home/pi/splash.png
